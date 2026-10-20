@@ -104,13 +104,13 @@ function makeCourseCard(course) {
   const hook = document.createElement("p");
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
   const hookCopy = {
-    "Affiliate & Income": "Want to earn through online offers or referrals? Explore how " + course.title + " approaches income-building and decide how you could apply it. Earnings vary and are not guaranteed.",
-    "Marketing & Ads": "Businesses need customers. Explore how " + course.title + " could help you develop marketing skills you may offer to businesses as a paid service. Getting clients and earning income are not guaranteed.",
-    "Content & Creator": "Turn content creation into a potential income path. Explore how " + course.title + " could help you create or grow content people want to watch. Results and earnings vary.",
-    "Automation & Tools": "People and businesses value time-saving solutions. Explore how " + course.title + " could help you practise digital automation and identify problems you may be able to solve. Income is not guaranteed.",
-    "Other Skills": "Build a practical skill you may be able to use for paid work. Read what " + course.title + " covers and decide whether it fits your goals. Results vary."
+    "Affiliate & Income": "Ready to start earning online? Discover the affiliate-marketing approach behind " + course.title + " and learn how to put it into action.",
+    "Marketing & Ads": "Businesses are looking for customers. Build practical marketing skills with " + course.title + and learn how to turn those skills into a service businesses can pay for.",
+    "Content & Creator": "Want to turn content into an income stream? Explore the creator strategies behind " + course.title + " and learn how to put your content to work.",
+    "Automation & Tools": "Save time, solve digital problems and explore new ways to create value. See how " + course.title + " can help you work toward those goals.",
+    "Other Skills": "Your next income opportunity could start with a practical skill. Find out what " + course.title + " teaches and how you can put it to work."
   };
-  hook.textContent = course.creatorHook || hookCopy[course.category] || "Want to turn " + course.title + " into a potential income opportunity? Explore the creator’s approach and check whether it fits your goals. Results vary.";
+  hook.textContent = course.creatorHook || hookCopy[course.category] || "Want to turn a digital skill into an income opportunity? Explore " + course.title + " and find your next step.";
 
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
