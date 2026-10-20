@@ -26,7 +26,7 @@ const courses = [
   { id: "snapchat-ads-mastery", title: "Snapchat Ads Mastery Course", category: "Marketing & Ads", icon: "◎", price: 15.50, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-174191&a=epa-169139", description: "A Snapchat advertising course for learning campaign concepts and audience-focused promotion.", opportunity: "Build a foundation for planning and reviewing paid campaigns; advertising spend is separate from course fees." },
   { id: "ai-telegram-automation", title: "AI Telegram Automation Blueprint (ATAB)", category: "Automation & Tools", icon: "✧", price: 11.90, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-212440&a=epa-169139", description: "A blueprint focused on AI-assisted automation and Telegram-based workflows.", opportunity: "Explore ways to organise repetitive communication or bot workflows, subject to platform rules and the course's actual syllabus." },
   { id: "100x-youtube-automation", title: "100X YouTube Automation Guide", category: "Content & Creator", icon: "▶", price: 30.50, affiliateUrl: "https://app.earnerspay.com/vsl?p=epr-212440&a=epa-169139", description: "A YouTube automation guide positioned around streamlining channel planning and production.", opportunity: "Learn to structure a repeatable publishing process. Confirm the product identity on the sales page before checkout." },
-  { id: "digital-hustler-blueprint", title: "Digital Hustler Blueprint (DHB)", category: "Affiliate & Income", icon: "↗", price: 7.50, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-980886&a=epa-169139", description: "A digital-work blueprint for people exploring practical online business ideas.", opportunity: "Use the material to identify a small project to practise, test and improve." },
+  { id: "digital-hustler-blueprint", title: "Digital Hustler Blueprint (DHB)", category: "Affiliate & Income", icon: "↗", price: 7.50, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-980886&a=epa-169139", creatorHook: "How to Earn ₦50K – ₦100K Weekly with Affiliate Marketing Using Just Your Phone", description: "A creator-promoted affiliate marketing program. Read the creator’s full sales page to understand what is included and how it works.", opportunity: "Explore the creator’s original explanation and decide whether the program matches your goals. Earnings are not guaranteed." },
   { id: "gas-grow-affiliate-sales", title: "G-A-S: Grow with Affiliate Sales", category: "Affiliate & Income", icon: "↗", price: 7.50, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-893164&a=epa-169139", description: "A guide focused on improving how affiliate offers are presented and promoted.", opportunity: "Practise ethical product recommendations and learn to measure which content attracts relevant buyers." },
   { id: "survey-income-machine", title: "Survey Income Machine (SIM) Blueprint", category: "Affiliate & Income", icon: "◎", price: 10.00, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-723001&a=epa-169139", description: "A survey-focused blueprint for learning how online survey opportunities work.", opportunity: "Check geographic eligibility, minimum payout rules and time requirements before using survey platforms." },
   { id: "jwealth-beginner-income", title: "Jwealth Beginner Income System", category: "Affiliate & Income", icon: "↗", price: 10.00, affiliateUrl: "https://app.earnerspay.com/buy?p=epr-925052&a=epa-169139", description: "A beginner income-system course listed for learners exploring online earning topics.", opportunity: "Review the full curriculum and apply any useful steps as small, measurable experiments." },
@@ -102,9 +102,13 @@ function makeCourseCard(course) {
   description.className = "course-description";
   description.textContent = course.description;
 
+  const hook = document.createElement("p");
+  hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
+  hook.textContent = course.creatorHook || "Read the creator’s original course page for the full explanation, contents and offer details.";
+
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
-  opportunityLabel.textContent = "Where it could lead";
+  opportunityLabel.textContent = "A note before you choose";
   const opportunity = document.createElement("p");
   opportunity.className = "opportunity-text";
   opportunity.textContent = course.opportunity;
@@ -150,7 +154,7 @@ function makeCourseCard(course) {
   details.textContent = "How it works";
   actions.append(enroll, details);
 
-  card.append(top, title, description, opportunityLabel, opportunity, meta, guidance, actions);
+  card.append(top, title, hook, description, opportunityLabel, opportunity, meta, guidance, actions);
   return card;
 }
 
