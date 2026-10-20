@@ -103,7 +103,14 @@ function makeCourseCard(course) {
 
   const hook = document.createElement("p");
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
-  hook.textContent = course.creatorHook || "Want to turn " + course.title + " into an income opportunity? Explore the creator’s approach and see how it could help you build, promote or offer something people may pay for. Results are not guaranteed.";
+  const hookCopy = {
+    "Affiliate & Income": "Want to earn through online offers or referrals? Explore how " + course.title + " approaches income-building and decide how you could apply it. Earnings vary and are not guaranteed.",
+    "Marketing & Ads": "Businesses need customers. Explore how " + course.title + " could help you develop marketing skills you may offer to businesses as a paid service. Getting clients and earning income are not guaranteed.",
+    "Content & Creator": "Turn content creation into a potential income path. Explore how " + course.title + " could help you create or grow content people want to watch. Results and earnings vary.",
+    "Automation & Tools": "People and businesses value time-saving solutions. Explore how " + course.title + " could help you practise digital automation and identify problems you may be able to solve. Income is not guaranteed.",
+    "Other Skills": "Build a practical skill you may be able to use for paid work. Read what " + course.title + " covers and decide whether it fits your goals. Results vary."
+  };
+  hook.textContent = course.creatorHook || hookCopy[course.category] || "Want to turn " + course.title + " into a potential income opportunity? Explore the creator’s approach and check whether it fits your goals. Results vary.";
 
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
