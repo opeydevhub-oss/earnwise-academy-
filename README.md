@@ -1,17 +1,23 @@
 # Earnwise Academy
 
-A responsive, accessible-first course discovery and affiliate landing page built with plain HTML, CSS and vanilla JavaScript.
+A responsive course-discovery and affiliate landing page built with plain HTML, CSS and vanilla JavaScript.
 
-## Configure before promoting
+## Current catalogue
 
-Open `app.js` and update:
+- 48 course cards from the supplied EarnersPay screen recording.
+- Search by course title, subject or potential use.
+- Category filters for affiliate/income, marketing/ads, content/creator, automation/tools and other skills.
+- Price sorting from low to high by default, high to low, or alphabetically.
+- Prices are displayed in USD as shown in the recording. The provider's checkout is the final source for current pricing and payment terms.
+- The budget call-to-action takes visitors to the low-price-first catalogue.
 
-1. `SITE_CONFIG.contactUrl` with your WhatsApp click-to-chat URL, for example `https://wa.me/234XXXXXXXXXX`. Use your own number and international format without the leading plus sign.
-2. Each course's `priceLabel` with the verified current price from Earners Pay/the course provider.
-3. Each course's `affiliateUrl` with the matching, real Earners Pay affiliate URL.
-4. Edit the `courses` array so it lists only courses you have verified are actually available to promote. Update each course's description and opportunities to match its real curriculum.
+## Before promoting
 
-Until these are set, the course cards intentionally show that links/prices need confirmation and the budget button falls back to the page section. Do not share the site as a ready-to-buy catalogue until configuration and testing are complete.
+1. Verify that every affiliate link opens the intended course and that the product remains available.
+2. **Important link check:** the 19th and 20th supplied URLs use the same product ID `epr-212440`, one with `/buy` and one with `/vsl`. They are assigned according to the order supplied, but that pair should be checked carefully before you advertise the catalogue.
+3. Confirm each listed price, currency, course contents, access terms and refund policy on its provider checkout.
+4. Some descriptions were written from the visible course titles and listing artwork because the linked checkout pages could not be opened for independent verification. Compare descriptions with the actual syllabus before promotion and revise any detail that does not match.
+5. The site does not have a WhatsApp contact URL configured. The budget feature therefore helps visitors browse the cheapest listings instead of implying a direct consultation is available.
 
 ## Publish with GitHub Pages
 
@@ -30,6 +36,6 @@ Until these are set, the course cards intentionally show that links/prices need 
 
 ## Files
 
-- `index.html` — page structure and content
-- `styles.css` — responsive visual design and reduced-motion support
-- `app.js` — catalogue data, search, category filters and link configuration
+- `index.html` — page structure, catalogue controls and content.
+- `styles.css` — responsive visual design and reduced-motion support.
+- `app.js` — 48 catalogue entries, affiliate links, search, category filtering and sorting.
