@@ -169,9 +169,9 @@ function getVisibleCourses() {
   });
 
   visible.sort((a, b) => {
-    if (sort === "price-desc") return b.price - a.price || a.title.localeCompare(b.title);
     if (sort === "name") return a.title.localeCompare(b.title);
-    return a.price - b.price || a.title.localeCompare(b.title);
+    if (sort === "category") return a.category.localeCompare(b.category) || a.title.localeCompare(b.title);
+    return 0;
   });
   return visible;
 }
