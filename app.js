@@ -223,6 +223,7 @@ nav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => 
 const budgetLink = document.querySelector("#budget-link");
 budgetLink?.addEventListener("click", () => {
   if (sortSelect) sortSelect.value = "price-asc";
+  if (searchInput) searchInput.value = "";
   activeFilter = "All";
   filterButtons.forEach(item => {
     const selected = (item.dataset.filter || "All") === "All";
