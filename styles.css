@@ -40,3 +40,149 @@
  .course-button{width:100%;justify-content:center;min-height:50px;font-size:15px}
  .price-value{font-size:28px}
 }
+
+/* Earnwise marketplace refresh: stronger hierarchy, larger type and clearer shopping flow */
+body{font-size:17px;line-height:1.75}
+.announcement{font-size:14px;padding:12px 20px}
+.site-header{min-height:86px}
+.brand{font-size:21px}
+.brand-mark{width:42px;height:42px;font-size:28px}
+.main-nav{font-size:15px;gap:clamp(16px,2.4vw,30px)}
+.nav-cta{padding:13px 18px}
+.eyebrow{font-size:12px;letter-spacing:.14em;line-height:1.5}
+.hero{min-height:650px;gap:54px;padding-top:82px;padding-bottom:88px}
+h1{font-size:clamp(48px,6vw,78px);line-height:1.04}
+.hero-intro{font-size:19px;line-height:1.8}
+.button,.text-link{font-size:16px}
+.button{padding:16px 21px}
+.hero-note{font-size:15px}
+.trust-strip{padding:25px max(5vw,24px);gap:28px}
+.trust-strip strong{font-size:16px}
+.trust-strip small{font-size:14px;line-height:1.5}
+.courses-section{padding-top:90px;padding-bottom:95px}
+.section-heading{gap:28px;margin-bottom:36px}
+.section-heading h2,.opportunity-copy h2,.budget-copy h2,.faq-intro h2,.final-cta h2{font-size:clamp(36px,4.3vw,54px);line-height:1.12}
+.section-intro{font-size:18px;line-height:1.8;max-width:760px}
+.course-count{font-size:15px;padding:12px 16px}
+.course-tools{gap:16px;margin-bottom:28px}
+.search-box input,.sort-box select{min-height:54px;font-size:16px}
+.search-box{padding:0 16px}
+.filter-chip{min-height:43px;padding:10px 16px;font-size:14px;font-weight:700}
+.course-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.course-card{gap:17px;padding:28px;border-radius:20px;background:var(--paper);box-shadow:0 16px 38px rgba(16,63,50,.09)}
+.course-card-top{gap:12px}
+.course-icon{width:48px;height:48px;font-size:25px}
+.category-label{font-size:13px;font-weight:800}
+.course-card h3{font-size:clamp(23px,2.2vw,29px);line-height:1.25}
+.creator-hook{font-size:clamp(20px,2.1vw,25px);line-height:1.4;padding:20px;border-radius:15px}
+.creator-hook-prompt{font-size:18px;line-height:1.55}
+.course-description,.opportunity-text{font-size:17px;line-height:1.75}
+.opportunity-label{font-size:13px;letter-spacing:.08em}
+.course-guidance{font-size:15px;line-height:1.7;padding:16px;border-radius:0 10px 10px 0}
+.course-meta{align-items:center;padding:17px 0;border-top:1px solid var(--line)}
+.price-label{font-size:14px;line-height:1.5}
+.price-value{display:block;font-size:clamp(29px,3vw,36px);line-height:1.2}
+.course-status{font-size:13px;padding:7px 10px;border-radius:99px;background:var(--mint)}
+.course-actions{display:grid;grid-template-columns:1fr}
+.course-button{min-height:56px;padding:15px 18px;font-size:16px;border-radius:10px}
+.course-button.secondary{min-height:48px}
+.catalog-note{font-size:15px;line-height:1.8;margin-top:26px}
+.opportunity-section{padding:88px 0}
+.opportunity-layout{gap:56px}
+.opportunity-copy>p:not(.eyebrow){font-size:18px;line-height:1.85}
+.path-item{padding:22px 0;gap:18px}
+.path-number{font-size:15px}
+.path-item h3{font-size:20px}
+.path-item p{font-size:16px;line-height:1.7}
+.how-section{padding-top:88px;padding-bottom:92px}
+.steps-grid{gap:22px}
+.step-card{padding:30px;border-radius:18px}
+.step-number{font-size:14px}
+.step-icon{font-size:34px;margin:18px 0}
+.step-card h3{font-size:24px}
+.step-card p{font-size:17px;line-height:1.75}
+.budget-section{padding-top:24px;padding-bottom:84px}
+.budget-card{padding:clamp(28px,5vw,58px);gap:28px;border-radius:22px}
+.budget-copy h2{max-width:650px}
+.budget-copy>p:not(.eyebrow){font-size:18px;line-height:1.8}
+.budget-button{font-size:16px}
+.faq-section{padding-top:78px;padding-bottom:90px;gap:56px}
+.faq-intro>p:not(.eyebrow){font-size:17px}
+.faq-list details{padding:21px 0}
+.faq-list summary{font-size:18px;line-height:1.55}
+.faq-list details p{font-size:16px;line-height:1.8}
+.final-cta{padding-top:56px;padding-bottom:56px;gap:28px}
+.site-footer{font-size:15px}
+.footer-bottom{font-size:13px}
+@media(max-width:900px){
+ .hero{gap:30px;min-height:unset;padding-top:65px;padding-bottom:70px}
+ .course-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+ .course-card{padding:22px}
+ .course-card h3{font-size:24px}
+ .creator-hook{font-size:21px}
+ .course-description,.opportunity-text{font-size:16px}
+ .opportunity-layout{gap:35px}
+}
+@media(max-width:700px){
+ body{font-size:16px}
+ .announcement{font-size:13px;padding:10px 14px}
+ .site-header{height:74px;min-height:74px;padding:0 18px}
+ .brand{font-size:19px}
+ .brand-mark{width:39px;height:39px;font-size:26px}
+ .section-wrap{width:calc(100% - 32px)}
+ .hero{grid-template-columns:1fr;gap:25px;padding-top:52px;padding-bottom:55px}
+ h1{font-size:clamp(43px,11vw,59px);line-height:1.05;margin-bottom:20px}
+ .hero-intro{font-size:18px;line-height:1.75}
+ .hero-actions{gap:17px;margin-top:25px}
+ .button{padding:15px 17px;font-size:15px}
+ .hero-art{min-height:340px;transform:scale(.95);transform-origin:top center}
+ .trust-strip{grid-template-columns:1fr;gap:16px;padding:22px 20px}
+ .trust-strip strong{font-size:16px}
+ .trust-strip small{font-size:14px}
+ .courses-section{padding-top:60px;padding-bottom:65px}
+ .section-heading{display:block;margin-bottom:27px}
+ .section-heading h2,.opportunity-copy h2,.budget-copy h2,.faq-intro h2,.final-cta h2{font-size:clamp(34px,8vw,43px)}
+ .section-intro{font-size:17px;line-height:1.75}
+ .course-count{display:inline-flex;margin-top:10px;font-size:14px}
+ .course-tools{gap:12px}
+ .search-box input,.sort-box select{min-height:52px;font-size:16px}
+ .filter-list{gap:8px}
+ .filter-chip{font-size:13px;min-height:42px;padding:9px 13px}
+ .course-grid{grid-template-columns:1fr;gap:18px}
+ .course-card{padding:22px;gap:15px;border-radius:18px}
+ .course-icon{width:44px;height:44px;font-size:23px}
+ .category-label{font-size:12px}
+ .course-card h3{font-size:25px;line-height:1.28}
+ .creator-hook{font-size:22px;line-height:1.42;padding:18px}
+ .creator-hook-prompt{font-size:18px;line-height:1.55}
+ .course-description,.opportunity-text{font-size:16px;line-height:1.75}
+ .opportunity-label{font-size:12px}
+ .course-guidance{font-size:15px;line-height:1.7;padding:14px}
+ .course-meta{gap:10px}
+ .price-label{font-size:13px}
+ .price-value{font-size:31px}
+ .course-status{font-size:12px}
+ .course-button{font-size:16px;min-height:54px}
+ .catalog-note{font-size:14px;line-height:1.75}
+ .opportunity-section{padding:60px 0}
+ .opportunity-layout{grid-template-columns:1fr;gap:30px}
+ .opportunity-copy>p:not(.eyebrow){font-size:17px}
+ .path-item{padding:18px 0}
+ .path-item h3{font-size:19px}
+ .path-item p{font-size:15px}
+ .how-section{padding-top:60px;padding-bottom:65px}
+ .steps-grid{grid-template-columns:1fr;gap:14px}
+ .step-card{padding:23px}
+ .step-card h3{font-size:22px}
+ .step-card p{font-size:16px}
+ .budget-section{padding-bottom:60px}
+ .budget-card{grid-template-columns:1fr;padding:25px;gap:22px}
+ .budget-copy>p:not(.eyebrow){font-size:16px}
+ .budget-decoration{font-size:80px}
+ .faq-section{grid-template-columns:1fr;padding-top:60px;padding-bottom:65px;gap:24px}
+ .faq-list summary{font-size:17px}
+ .faq-list details p{font-size:15px}
+ .final-cta{display:grid;grid-template-columns:1fr;padding-top:42px;padding-bottom:42px}
+ .site-footer{padding:30px 18px}
+ .footer-bottom{gap:8px;flex-wrap:wrap}
+}
