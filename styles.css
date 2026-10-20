@@ -13,3 +13,30 @@
 
 /* Clear next-step instructions on every course card */
 .course-guidance{margin:0;padding:10px 12px;border-left:3px solid var(--gold);border-radius:0 7px 7px 0;background:var(--mint);color:var(--ink);font-size:12px;line-height:1.6}
+
+/* More readable, high-contrast course cards on mobile and desktop */
+.course-card{gap:15px;padding:clamp(20px,2.5vw,30px);border:1px solid var(--line);box-shadow:0 12px 30px rgba(28,43,37,.07)}
+.course-card h3{font-size:clamp(21px,2vw,27px);line-height:1.25;letter-spacing:-.025em}
+.course-description,.opportunity-text{font-size:15px;line-height:1.75}
+.opportunity-label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.creator-hook{margin:0;padding:17px 18px;border-radius:12px;background:var(--green-dark);color:#fff9e9;font-family:var(--display);font-size:clamp(18px,2vw,23px);font-weight:800;line-height:1.4;box-shadow:inset 0 0 0 1px rgba(199,155,75,.65)}
+.creator-hook-prompt{background:var(--mint);color:var(--green-dark);font-family:var(--sans);font-size:15px;font-weight:700;box-shadow:none}
+.course-guidance{padding:14px 15px;border-left-width:4px;font-size:14px;line-height:1.7}
+.course-meta{gap:14px}
+.price-label{font-size:12px}
+.price-value{font-size:clamp(24px,2.5vw,30px);font-weight:800;line-height:1.2}
+.course-status{font-size:12px;font-weight:700}
+.course-actions{gap:10px}
+.course-button{min-height:48px;padding:13px 17px;font-size:14px;font-weight:800}
+@media(max-width:700px){
+ .course-grid{gap:18px}
+ .course-card{padding:21px;gap:14px;border-radius:16px}
+ .course-card h3{font-size:24px}
+ .course-description,.opportunity-text{font-size:15px;line-height:1.75}
+ .creator-hook{padding:17px;font-size:21px;line-height:1.45}
+ .creator-hook-prompt{font-size:15px}
+ .course-guidance{font-size:14px}
+ .course-actions{display:grid;grid-template-columns:1fr}
+ .course-button{width:100%;justify-content:center;min-height:50px;font-size:15px}
+ .price-value{font-size:28px}
+}
