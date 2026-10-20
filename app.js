@@ -105,7 +105,7 @@ function makeCourseCard(course) {
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
   const hookCopy = {
     "Affiliate & Income": "Ready to start earning online? Discover the affiliate-marketing approach behind " + course.title + " and learn how to put it into action.",
-    "Marketing & Ads": "Businesses are looking for customers. Build practical marketing skills with " + course.title + and learn how to turn those skills into a service businesses can pay for.",
+    "Marketing & Ads": "Businesses need customers. Build practical marketing skills with " + course.title + " and learn how to offer marketing services businesses may pay for.";",
     "Content & Creator": "Want to turn content into an income stream? Explore the creator strategies behind " + course.title + " and learn how to put your content to work.",
     "Automation & Tools": "Save time, solve digital problems and explore new ways to create value. See how " + course.title + " can help you work toward those goals.",
     "Other Skills": "Your next income opportunity could start with a practical skill. Find out what " + course.title + " teaches and how you can put it to work."
@@ -114,7 +114,7 @@ function makeCourseCard(course) {
 
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
-  opportunityLabel.textContent = "A note before you choose";
+  opportunityLabel.textContent = "How this can help you earn";
   const opportunity = document.createElement("p");
   opportunity.className = "opportunity-text";
   opportunity.textContent = course.opportunity;
@@ -128,14 +128,14 @@ function makeCourseCard(course) {
   const price = document.createElement("div");
   const priceLabel = document.createElement("span");
   priceLabel.className = "price-label";
-  priceLabel.textContent = "Estimated price in naira";
+  priceLabel.textContent = "Course price estimate";
   const priceValue = document.createElement("span");
   priceValue.className = "price-value";
   priceValue.textContent = formatPrice(course.price);
   price.append(priceLabel, priceValue);
   const status = document.createElement("span");
   status.className = "course-status";
-  status.textContent = "Check checkout";
+  status.textContent = "Naira estimate";
   meta.append(price, status);
 
   const actions = document.createElement("div");
