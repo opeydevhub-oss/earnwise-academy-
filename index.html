@@ -68,16 +68,19 @@
         <span class="course-count" id="course-count">Explore skill paths</span>
       </div>
       <div class="course-tools">
-        <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Search courses</span><input id="course-search" type="search" placeholder="Search skills or opportunities…" autocomplete="off"></label>
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Search courses</span><input id="course-search" type="search" placeholder="Search courses, skills or opportunities…" autocomplete="off"></label>
+        <label class="sort-box"><span>Sort by</span><select id="course-sort" aria-label="Sort courses"><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label>
         <div class="filter-list" role="group" aria-label="Filter courses">
-          <button class="filter-chip active" data-filter="All" aria-pressed="true">All paths</button>
-          <button class="filter-chip" data-filter="Creative" aria-pressed="false">Creative</button>
-          <button class="filter-chip" data-filter="Technology" aria-pressed="false">Technology</button>
-          <button class="filter-chip" data-filter="Business" aria-pressed="false">Business</button>
+          <button class="filter-chip active" data-filter="All" aria-pressed="true">All courses</button>
+          <button class="filter-chip" data-filter="Affiliate &amp; Income" aria-pressed="false">Affiliate &amp; income</button>
+          <button class="filter-chip" data-filter="Marketing &amp; Ads" aria-pressed="false">Marketing &amp; ads</button>
+          <button class="filter-chip" data-filter="Content &amp; Creator" aria-pressed="false">Content &amp; creator</button>
+          <button class="filter-chip" data-filter="Automation &amp; Tools" aria-pressed="false">Automation</button>
+          <button class="filter-chip" data-filter="Other Skills" aria-pressed="false">Other skills</button>
         </div>
       </div>
       <div class="course-grid" id="course-grid" aria-live="polite"></div>
-      <p class="catalog-note"><span aria-hidden="true">ⓘ</span> Course availability, curriculum, pricing and enrollment links should be confirmed on the provider's official page before payment.</p>
+      <p class="catalog-note"><span aria-hidden="true">ⓘ</span> Prices are shown in USD as displayed in the supplied listing. Confirm current price, payment currency, course contents and refund terms on the provider checkout before paying.</p>
     </section>
 
     <section class="opportunity-section">
@@ -104,8 +107,8 @@
     <section class="budget-section section-wrap" id="budget">
       <div class="budget-card">
         <div class="budget-decoration" aria-hidden="true">₦</div>
-        <div class="budget-copy"><p class="eyebrow">LET'S FIND AN OPTION</p><h2>Found a course you like, but the price is a stretch?</h2><p>Tell me which course you are interested in and the amount you can comfortably afford. I'll let you know whether there is a suitable option. A discount or alternative is not guaranteed.</p></div>
-        <a class="button button-primary budget-button" id="budget-link" href="#contact">Discuss your budget <span aria-hidden="true">↗</span></a>
+        <div class="budget-copy"><p class="eyebrow">START WITH YOUR BUDGET</p><h2>Find a course that fits what you can spend.</h2><p>Compare the lowest listed prices first, read the course details and check the provider's final checkout price before deciding. You do not need to buy the most expensive option to start learning.</p></div>
+        <a class="button button-primary budget-button" id="budget-link" href="#courses">See lowest-priced courses <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
