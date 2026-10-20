@@ -10,3 +10,6 @@
 .price-value{font-variant-numeric:tabular-nums}
 @media(max-width:900px){.course-tools{grid-template-columns:minmax(0,1fr) auto}.sort-box select{min-width:145px}.course-tools .filter-list{grid-column:1/-1}}
 @media(max-width:700px){.course-tools{grid-template-columns:1fr;gap:12px}.course-tools .search-box,.course-tools .sort-box,.course-tools .filter-list{grid-column:1/-1}.sort-box{justify-content:space-between}.sort-box select{flex:1;width:100%;min-width:0}.course-tools .filter-list{gap:6px}}
+
+/* Clear next-step instructions on every course card */
+.course-guidance{margin:0;padding:10px 12px;border-left:3px solid var(--gold);border-radius:0 7px 7px 0;background:var(--mint);color:var(--ink);font-size:12px;line-height:1.6}
