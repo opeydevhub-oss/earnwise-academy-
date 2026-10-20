@@ -13,7 +13,7 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <div class="announcement">Your next skill can start with one good decision. <a href="#courses">Explore learning paths <span aria-hidden="true">↗</span></a></div>
+  <div class="announcement">EXPLORE YOUR NEXT INCOME PATH <a href="#courses">Browse the course marketplace <span aria-hidden="true">↗</span></a></div>
   <header class="site-header">
     <a class="brand" href="#" aria-label="Earnwise Academy home">
       <span class="brand-mark" aria-hidden="true">e.</span>
@@ -29,6 +29,28 @@
   </header>
 
   <main>
+    <section class="courses-section section-wrap" id="courses">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE EARNWISE COURSE MARKETPLACE</p><h2>Choose your next <span>earning path.</span></h2><p class="section-intro">Browse the catalogue by earning path, search for a specific course, and open the creator’s page to confirm the current price, curriculum and claims.</p></div>
+        <span class="course-count" id="course-count">Explore skill paths</span>
+      </div>
+      <div class="course-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Search courses</span><input id="course-search" type="search" placeholder="Search courses, skills or opportunities…" autocomplete="off"></label>
+        <label class="sort-box"><span>Sort by</span><select id="course-sort" aria-label="Sort courses"><option value="featured">Featured order</option><option value="name">Name: A–Z</option><option value="category">Group by category</option></select></label>
+        <div class="filter-list" role="group" aria-label="Filter courses">
+          <button class="filter-chip active" data-filter="All" aria-pressed="true">All courses</button>
+          <button class="filter-chip" data-filter="Affiliate &amp; Income" aria-pressed="false">Affiliate &amp; income</button>
+          <button class="filter-chip" data-filter="Marketing &amp; Ads" aria-pressed="false">Marketing &amp; ads</button>
+          <button class="filter-chip" data-filter="Content &amp; Creator" aria-pressed="false">Content &amp; creator</button>
+          <button class="filter-chip" data-filter="Automation &amp; Tools" aria-pressed="false">Automation</button>
+          <button class="filter-chip" data-filter="Other Skills" aria-pressed="false">Other skills</button>
+        </div>
+      </div>
+      <div class="course-grid" id="course-grid" aria-live="polite"></div>
+      <p class="catalog-note"><span aria-hidden="true">ⓘ</span> Course prices are intentionally not listed here. Open the course page on EarnersPay to confirm the current price, currency, what is included, and any terms before deciding. Earning examples are possibilities or creator claims, not guaranteed results.</p>
+    </section>
+
+
     <section class="hero section-wrap">
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR ONLINE INCOME STARTS WITH A PLAN</p>
@@ -62,27 +84,6 @@
       <div><span class="strip-icon">♡</span><span><strong>Find your fit</strong><small>Choose for your goals and budget</small></span></div>
     </section>
 
-    <section class="courses-section section-wrap" id="courses">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE COURSE MARKETPLACE</p><h2>What do you want to <span>earn from?</span></h2><p class="section-intro">Browse the catalogue by earning path, search for a specific course, and open the creator’s page to confirm the current price, curriculum and claims.</p></div>
-        <span class="course-count" id="course-count">Explore skill paths</span>
-      </div>
-      <div class="course-tools">
-        <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Search courses</span><input id="course-search" type="search" placeholder="Search courses, skills or opportunities…" autocomplete="off"></label>
-        <label class="sort-box"><span>Sort by</span><select id="course-sort" aria-label="Sort courses"><option value="featured">Featured order</option><option value="name">Name: A–Z</option><option value="category">Group by category</option></select></label>
-        <div class="filter-list" role="group" aria-label="Filter courses">
-          <button class="filter-chip active" data-filter="All" aria-pressed="true">All courses</button>
-          <button class="filter-chip" data-filter="Affiliate &amp; Income" aria-pressed="false">Affiliate &amp; income</button>
-          <button class="filter-chip" data-filter="Marketing &amp; Ads" aria-pressed="false">Marketing &amp; ads</button>
-          <button class="filter-chip" data-filter="Content &amp; Creator" aria-pressed="false">Content &amp; creator</button>
-          <button class="filter-chip" data-filter="Automation &amp; Tools" aria-pressed="false">Automation</button>
-          <button class="filter-chip" data-filter="Other Skills" aria-pressed="false">Other skills</button>
-        </div>
-      </div>
-      <div class="course-grid" id="course-grid" aria-live="polite"></div>
-      <p class="catalog-note"><span aria-hidden="true">ⓘ</span> Course prices are intentionally not listed here. Open the course page on EarnersPay to confirm the current price, currency, what is included, and any terms before deciding. Earning examples are possibilities or creator claims, not guaranteed results.</p>
-    </section>
-
     <section class="opportunity-section" id="income-paths">
       <div class="section-wrap opportunity-layout">
         <div class="opportunity-copy"><p class="eyebrow eyebrow-light">WAYS PEOPLE WORK TOWARD ONLINE INCOME</p><h2>Learn a method.<br><span>Put it to work.</span></h2><p>Choose a money-making model that matches your interests: promote products, create content, offer services, or learn digital tools. Then use the course to understand the steps and start practising.</p><a href="#courses" class="button button-cream">Find a course for your goal <span aria-hidden="true">↗</span></a></div>
@@ -99,7 +100,7 @@
       <div class="section-heading centered"><p class="eyebrow">SIMPLE BY DESIGN</p><h2>From choosing a goal to <span>taking action.</span></h2><p class="section-intro">A simple route from choosing a money goal to finding a guide that explains the process.</p></div>
       <div class="steps-grid">
         <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Explore</h3><p>Browse skill paths and read what each course covers and who it may suit.</p></article>
-        <article class="step-card"><span class="step-number">02</span><div class="step-icon">◎</div><h3>Compare</h3><p>Review the price and possible opportunities. Ask questions before deciding.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon">◎</div><h3>Compare</h3><p>Review the earning model, creator details and requirements before deciding.</p></article>
         <article class="step-card"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Enroll carefully</h3><p>Use the course's official checkout and confirm the details before paying.</p></article>
       </div>
     </section>
