@@ -105,7 +105,7 @@ function makeCourseCard(course) {
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
   const hookCopy = {
     "Affiliate & Income": "Ready to start earning online? Discover the affiliate-marketing approach behind " + course.title + " and learn how to put it into action.",
-    "Marketing & Ads": "Businesses need customers. Build practical marketing skills with " + course.title + " and learn how to offer marketing services businesses may pay for.";",
+    "Marketing & Ads": "Businesses need customers. Build practical marketing skills with " + course.title + " and learn how to offer marketing services businesses may pay for.",
     "Content & Creator": "Want to turn content into an income stream? Explore the creator strategies behind " + course.title + " and learn how to put your content to work.",
     "Automation & Tools": "Save time, solve digital problems and explore new ways to create value. See how " + course.title + " can help you work toward those goals.",
     "Other Skills": "Your next income opportunity could start with a practical skill. Find out what " + course.title + " teaches and how you can put it to work."
