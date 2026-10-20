@@ -104,17 +104,17 @@ function makeCourseCard(course) {
   const hook = document.createElement("p");
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
   const hookCopy = {
-    "Affiliate & Income": "How much could you make monthly with " + course.title + "? Explore the earning model, learn the steps, and see what it may take to turn clicks and referrals into commissions.",
-    "Marketing & Ads": "Could " + course.title + " help you build a monthly income skill? Learn how businesses use this skill and how you could work toward paid client projects.",
-    "Content & Creator": "What could " + course.title + " mean for your monthly income goals? Explore ways creators build an audience, develop content, and work toward monetisation.",
-    "Automation & Tools": "Could you use " + course.title + " to create a useful service or income stream? Explore the workflow, the problem it solves, and ways people may put it to work.",
-    "Other Skills": "How could " + course.title + " fit into your monthly earning plan? Explore the skill or model it teaches and how you might apply it to real opportunities."
+    "Affiliate & Income": "HOW MUCH COULD YOU EARN? Explore how " + course.title + " approaches online income and what it may take to turn clicks and referrals into commissions.",
+    "Marketing & Ads": "TURN A SKILL INTO A SERVICE. Explore how " + course.title + " could help you work toward paid client projects and a monthly income goal.",
+    "Content & Creator": "BUILD TOWARD CREATOR INCOME. Explore how " + course.title + " approaches content, audience growth, and possible monetisation.",
+    "Automation & Tools": "MAKE YOUR SKILLS USEFUL. Explore how " + course.title + " could help you build a workflow, solve a problem, or develop a service.",
+    "Other Skills": "FIND YOUR EARNING ANGLE. Explore the skill or model in " + course.title + " and how you might apply it to real opportunities."
   };
   hook.textContent = course.creatorHook || hookCopy[course.category] || "What monthly earning potential could " + course.title + " help you work toward? Open the course page to understand the method, requirements, and creator's claims.";
 
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
-  opportunityLabel.textContent = "Your monthly earning potential";
+  opportunityLabel.textContent = "HOW YOU COULD PUT IT TO WORK";
   const opportunity = document.createElement("p");
   opportunity.className = "opportunity-text";
   opportunity.textContent = course.opportunity;
@@ -124,19 +124,14 @@ function makeCourseCard(course) {
   guidance.textContent = "Next step: tap View course, read the course page, then scroll to the Order Now button and tap it to continue.";
 
   const meta = document.createElement("div");
-  meta.className = "course-meta";
-  const price = document.createElement("div");
+  meta.className = "course-meta course-meta-potential";
   const priceLabel = document.createElement("span");
   priceLabel.className = "price-label";
-  priceLabel.textContent = "Course price estimate";
-  const priceValue = document.createElement("span");
-  priceValue.className = "price-value";
-  priceValue.textContent = formatPrice(course.price);
-  price.append(priceLabel, priceValue);
+  priceLabel.textContent = "YOUR NEXT INCOME MOVE";
   const status = document.createElement("span");
   status.className = "course-status";
-  status.textContent = "Naira estimate";
-  meta.append(price, status);
+  status.textContent = course.category === "Affiliate & Income" ? "Affiliate potential" : course.category === "Marketing & Ads" ? "Client-service potential" : course.category === "Content & Creator" ? "Creator potential" : "Skill-building potential";
+  meta.append(priceLabel, status);
 
   const actions = document.createElement("div");
   actions.className = "course-actions";
