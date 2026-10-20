@@ -1,7 +1,7 @@
 /*
  * Earnwise Academy course catalogue.
  * Prices and titles transcribed from the supplied EarnersPay screen recording.
- * Prices are shown as displayed in the recording (USD); always confirm at checkout.
+ * Prices are converted for display at the site owner's rate of $1 = ₦1,000; verify provider checkout prices.
  * Affiliate links are kept in the order supplied. Verify the repeated epr-212440 ID
  * (one /buy URL and one /vsl URL) before promoting both adjacent listings.
  */
@@ -73,12 +73,11 @@ function safeExternalUrl(value) {
 }
 
 function formatPrice(value) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-NG", {
     style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  }).format(value);
+    currency: "NGN",
+    maximumFractionDigits: 0
+  }).format(value * 1000);
 }
 
 function makeCourseCard(course) {
@@ -104,7 +103,7 @@ function makeCourseCard(course) {
 
   const hook = document.createElement("p");
   hook.className = course.creatorHook ? "creator-hook" : "creator-hook creator-hook-prompt";
-  hook.textContent = course.creatorHook || "Read the creator’s original course page for the full explanation, contents and offer details.";
+  hook.textContent = course.creatorHook || "Want to turn " + course.title + " into an income opportunity? Explore the creator’s approach and see how it could help you build, promote or offer something people may pay for. Results are not guaranteed.";
 
   const opportunityLabel = document.createElement("p");
   opportunityLabel.className = "opportunity-label";
@@ -122,7 +121,7 @@ function makeCourseCard(course) {
   const price = document.createElement("div");
   const priceLabel = document.createElement("span");
   priceLabel.className = "price-label";
-  priceLabel.textContent = "Listed price (USD)";
+  priceLabel.textContent = "Estimated price in naira";
   const priceValue = document.createElement("span");
   priceValue.className = "price-value";
   priceValue.textContent = formatPrice(course.price);
