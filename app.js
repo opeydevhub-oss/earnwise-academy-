@@ -109,6 +109,10 @@ function makeCourseCard(course) {
   opportunity.className = "opportunity-text";
   opportunity.textContent = course.opportunity;
 
+  const guidance = document.createElement("p");
+  guidance.className = "course-guidance";
+  guidance.textContent = "Next step: tap View course, read the course page, then scroll to the Order Now button and tap it to continue.";
+
   const meta = document.createElement("div");
   meta.className = "course-meta";
   const price = document.createElement("div");
@@ -146,7 +150,7 @@ function makeCourseCard(course) {
   details.textContent = "How it works";
   actions.append(enroll, details);
 
-  card.append(top, title, description, opportunityLabel, opportunity, meta, actions);
+  card.append(top, title, description, opportunityLabel, opportunity, meta, guidance, actions);
   return card;
 }
 
